@@ -1,5 +1,5 @@
 ﻿// Скрипт после загрузки страницы
-window.addEventListener("DOMContentLoaded", function () {
+window.onload = function () {
     'use strict';
     let tab = document.querySelectorAll(".info-header-tab"),
         info = document.querySelector(".info-header"),
@@ -28,7 +28,7 @@ window.addEventListener("DOMContentLoaded", function () {
         if (target && target.classList.contains("info-header-tab")) {
             for (let i = 0; i < tab.length; i++) {
                 // Если то куда нажали совпадает с табом
-                if (target == tab[i]) {
+                if (target === tab[i]) {
                     hideTabContent(0);  // Скрыли все табы
                     showTabContent(i);  // Показываем нужный таб 
                     break;
@@ -36,4 +36,4 @@ window.addEventListener("DOMContentLoaded", function () {
             }
         }
     });
-});
+};

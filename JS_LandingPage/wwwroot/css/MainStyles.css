@@ -132,6 +132,15 @@ header ul li:before {
   background: url(/images/main_bg.jpg);
   background-position: 50% 30%;
 }
+.content .content .info .hide {
+  display: none;
+}
+.content .content .info .show {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 .content .info {
   width: 100%;
   min-height: 580px;
